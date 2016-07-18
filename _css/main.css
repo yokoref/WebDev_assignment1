@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.body_text {	font-size: medium;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.nav_bar {	font-size: large;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.small_text {	font-size: small;
+	font-family: Arial, Helvetica, sans-serif;
+}
