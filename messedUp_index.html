@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Carolyne's Creations is a full\ervice gourmet food shop. We offer cookingclasses, take-out meals, and catering services.We also have a retail shop that stocks gourmetItems and kitchen accessories.">
+<meta name="keywords" content="(arolyne's Creations, gourmet,catering, cooking classes, kitchen accessories,take-out, Seven Falls, Virginia.">
+<meta name="author" content="Hege Refsnes">
+
+
+<title>Carolyne's Creations: Premier Gourmet Food Shop</title>
+
+<style>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</style>
+
+</head>
+
+
+
+<body>
+<!--  New CONTAINER   -->
+<div id="container"> 
+
+	<!--   HEADER  -->
+	<div id="header">
+
+   	  <div id="logo"><img src="_images/cc_banner.jpg" alt="Carolyne's Creations banner" width="950" height="150"></div>
+        
+        
+
+        
+        <div id="navbar">
+            <nav class="nav_bar">
+                <a href="index.html" >Home</a> | 
+                <a href="shop.html">Shop</a> | 
+                <a href="classes.html">Classes</a> | 
+                <a href="recipes.html">Recipes</a>
+            </nav>
+    	</div>
+  	</div>
+    
+    
+    <!-- CONTENT AREA  -->
+    <div id="content_area">Main Content area
+    	
+        
+        <div id="left_col">Left Col Content</div>
+         <div id="right_col">Right col content</div>       
+    
+    </div>
+    
+   
+    
+</div>
+<!--  END CONTAINER   -->
+
+
+
+	
+     | 
+     
+    
+   
+</div>
+
+
+<hr width="400" align="left">
+<h2>Welcome</h2>
+
+
+
+<p class="body_text">Let Carolyne's Creations be your personal chef, your one-stop shop for the latest in kitchen items and fresh ingredients, and your source for new and innovative recipes. We enjoy planning and presenting special events for all occasions — from children's birthday parties to corporate retreats. Pick-up and drop-off options are also available. We also offer beautiful baskets overflowing with delicious assortments of casseroles, salads, homemade breads, and desserts; trays of vegetables and cheeses or cookies; or coffee cakes and pastries with fresh ground coffee or specialty teas as perfect gifts for family and friends. We offer seasonal cooking classes in our newly redesigned kitchen for aspiring chefs of all ages.</p>
+
+<h2>How to find us</h2>
+
+
+<p class="body_text">We are located in the Plaza Shopping Center at 496 Maple Avenue in Seven Falls, Virginia. We are the second building on the left side of the complex when entering from the Main Street entrance. We also have a pick-up window on the right side of the building for take-out orders. Give us a call at 555-963-8271 or stop by our shop to browse through our selections.</p>
+ <!-- FOOTER  -->
+    
+    
+ 
+<section>Carolyne's Creations<br>
+496 Maple Avenue<br>
+Seven Falls, Virginia 52404<br>
+555-963-8271<br>
+Email&nbsp;<a href="mailto:carolyne@carolynescreations.com">Carolyne Kate</a>
+</section><br>
+
+<div class="small_text">Copyright 2001 - 2015 </div>
+
+
+
+<script>
+document.write( 
+  "Last updated on: " + 
+  date_lastmodified() );
+
+<!-- Display when last modified -->
+// format date as mmm dd, yyyy
+// example: 12-Jan-99
+//
+function date_ddmmmyyyy(date)
+{
+  var d = date.getDate();
+  var m = date.getMonth() + 1;
+  var y = date.getFullYear();
+  
+  // handle different year values 
+  // returned by IE and NS in 
+  // the year 2000.
+  if(y >= 2000)
+  {
+    y += 100;
+  }
+  if(y <= 2000)
+  {
+    y -= 100;
+  }
+
+  // could use splitString() here 
+  // but the following method is 
+  // more compatible
+	  var mmm = 
+		( 1==m)?'January':( 2==m)?'February':(3==m)?'March':
+		( 4==m)?'April':( 5==m)?'May':(6==m)?'June':
+		( 7==m)?'July':( 8==m)?'August':(9==m)?'September':
+		(10==m)?'October':(11==m)?'November':'December';
+		
+  return "" + mmm + (d<10?"0"+d:d) + ", "  + (y<10?"0" + y:y);
+}
+
+// get last modified date of the 
+// current document.
+
+function date_lastmodified()
+{
+  var lmd = document.lastModified;
+  var s   = "Unknown";
+  var d1;
+
+  // check if we have a valid date
+  // before proceeding
+  if(0 != (d1=Date.parse(lmd)))
+  {
+    s = "" + date_ddmmmyyyy(new Date(d1));
+  }
+  return s;
+}
+
+</script>
+</body>
+</html>

@@ -2,25 +2,109 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<style>
-<link rel="stylesheet" type="text/css" href="css/main.css">
-</style>
+<link rel="stylesheet" type="text/css" href="_css/main.css">
 </head>
 <body>
 
-<p><img src="_images/cc_banner.jpg" alt="Carolyne's Creations banner" width="950" height="150"></p>
+<!--  CONTAINER   -->
+
+<div id="container"> 
+
+
+<div id="banner"><img src="_images/cc_banner.jpg" alt="Carolyne's Creations banner" >
+
 
 <nav class="nav_bar">
-<a href="index.html" >Home</a> | 
-<a href="shop.html">Shop</a> | 
-<a href="classes.html">Classes</a> | 
-<a href="recipes.html">Recipes</a>
+    <a href="index.html" >Home</a> | 
+    <a href="shop.html">Shop</a> | 
+    <a href="classes.html">Classes</a> | 
+    <a href="catering.html">Catering</a> | 
+    <a href="recipes.html">Recipes</a>
 </nav>
+
+
 <hr width="400" align="left">
-<h2>Welcome</h2>
+
 
 <body>
-<h1>Recipes</h1>
-</body>
 
+<h2>Recipes</h2>
+
+<div>Blah Blah Blah Blah!<br>
+All about our recipes.....</div>
+<br><br>
+
+
+
+<section>Carolyne's Creations<br>
+496 Maple Avenue<br>
+Seven Falls, Virginia 52404<br>
+555-963-8271<br>
+Email&nbsp;<a href="mailto:carolyne@carolynescreations.com">Carolyne Kate</a>
+</section>
+
+<p class="small_text">Copyright 2001 - 2015 <br>
+  <script 
+  type="text/JavaScript" 
+  language="JavaScript">
+<!-- 
+//
+// format date as dd-mmm-yy
+// example: 12-Jan-99
+//
+function date_mmmddyy(date)
+{
+  var d = date.getDate();
+  var m = date.getMonth() + 1;
+  var y = date.getYear();
+  // handle different year values 
+  // returned by IE and NS in 
+  // the year 2000.
+  if(y >= 2000)
+  {
+    y -= 2000;
+  }
+  if(y >= 100)
+  {
+    y -= 100;
+  }
+  // could use splitString() here 
+  // but the following method is 
+  // more compatible
+  var mmm = 
+    ( 1==m)?'January':( 2==m)?'February':(3==m)?'March':
+    ( 4==m)?'April':( 5==m)?'May':(6==m)?'June':
+    ( 7==m)?'July':( 8==m)?'August':(9==m)?'September':
+    (10==m)?'October':(11==m)?'November':'December';
+  return "" +
+    (mmm) + " " + (d<10?"0"+d:d) +  "," +
+    (y<10?"0" + y:y);
+} 
+//
+// get last modified date of the 
+// current document.
+//
+function date_lastmodified()
+{
+  var lmd = document.lastModified;
+  var s   = "Unknown";
+  var d1;
+  // check if we have a valid date
+  // before proceeding
+  if(0 != (d1=Date.parse(lmd)))
+  {
+     s = "" + date_mmmddyy(new Date(d1));
+	<!--s = "" + date_mmmddyy(new Date(d1));-->
+  }
+  return s;
+}
+//
+// finally display the last modified date
+// as DD-MMM-YY
+//
+document.write( 
+  "Last updated on: " + 
+  date_lastmodified() );
+</script>
+</body>
 </html>

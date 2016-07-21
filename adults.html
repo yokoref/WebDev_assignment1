@@ -6,5 +6,72 @@
 </head>
 
 <body>
+
+
+
+
+<br>
+
+<div class="small_text">Copyright 2001 - 2015 </div>
+
+
+
+<script>
+<!-- Display when last modified -->
+// format date as mmm dd, yyyy
+// example: 12-Jan-99
+//
+function date_ddmmmyyyy(date)
+{
+  var d = date.getDate();
+  var m = date.getMonth() + 1;
+  var y = date.getFullYear();
+  
+  // handle different year values 
+  // returned by IE and NS in 
+  // the year 2000.
+  if(y >= 2000)
+  {
+    y += 100;
+  }
+  if(y <= 2000)
+  {
+    y -= 100;
+  }
+
+  // could use splitString() here 
+  // but the following method is 
+  // more compatible
+	  var mmm = 
+		( 1==m)?'January':( 2==m)?'February':(3==m)?'March':
+		( 4==m)?'April':( 5==m)?'May':(6==m)?'June':
+		( 7==m)?'July':( 8==m)?'August':(9==m)?'September':
+		(10==m)?'October':(11==m)?'November':'December';
+		
+  return "" + mmm + (d<10?"0"+d:d) + ", "  + (y<10?"0" + y:y);
+}
+
+// get last modified date of the 
+// current document.
+
+function date_lastmodified()
+{
+  var lmd = document.lastModified;
+  var s   = "Unknown";
+  var d1;
+
+  // check if we have a valid date
+  // before proceeding
+  if(0 != (d1=Date.parse(lmd)))
+  {
+    s = "" + date_ddmmmyyyy(new Date(d1));
+  }
+  return s;
+}
+document.write( 
+  "Last updated on: " + 
+  date_lastmodified() );
+
+</script>
 </body>
 </html>
